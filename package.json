@@ -1,5 +1,5 @@
 {
-  "name": "react-shopping-cart",
+  "name": "deliverei",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,6 +21,7 @@
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "server": "nodemon server/app",
     "wdio": "wdio",
+    "postinstall": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "npm run test -- --coverage",
