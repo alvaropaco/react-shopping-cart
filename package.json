@@ -18,7 +18,7 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"react-scripts start\"",
+    "start": "node_modules/.bin/concurrently \"npm run server\" \"react-scripts start\"",
     "server": "nodemon server/app",
     "wdio": "wdio",
     "postinstall": "npm run build",
